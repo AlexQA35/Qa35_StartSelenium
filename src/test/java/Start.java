@@ -35,6 +35,23 @@ public class Start {
         wd.findElement(By.cssSelector(".container"));
         //attribute
         wd.findElement(By.cssSelector("[href='/home']"));
+        //начало значения
+        wd.findElement(By.cssSelector("[href='/home']"));
+        //разные набор значений
+        wd.findElement(By.cssSelector("div#rott.container"));
+
+        wd.findElement(By.cssSelector("[href='/home']"));
+        wd.findElement(By.cssSelector("[href ^='/ho']")); /// start with /ho
+        wd.findElement(By.cssSelector("[href *='om']")); // containce - om
+        wd.findElement(By.cssSelector("[href $='me']")); // end of me
+
+        wd.findElement(By.cssSelector("div#root.container"));
+        wd.findElement(By.cssSelector("a[href='/home']"));
+
+
+
+
+
 
 
 
