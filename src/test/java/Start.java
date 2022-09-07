@@ -49,13 +49,31 @@ public class Start {
         wd.findElement(By.cssSelector("a[href='/home']"));
 
 
-
-
-
-
-
-
         wd.quit();
 
     }
+    WebElement el1 = wd.findElement(By.tagName("a"));
+    WebElement el2 = wd.findElement(By.id("skip-to-content"));
+    WebElement el3 = wd.findElement(By.className("visually-hidden"));
+    WebElement el5 = wd.findElement(By.linkText ("Log in"));
+
+    WebElement elc1 = wd.findElement(By.cssSelector("#skip-to-content"));
+    WebElement elc2 = wd.findElement(By.cssSelector(".visually-hidden"));
+    WebElement elc3= wd.findElement(By.cssSelector("[data-testid='smallnav']"));
+
+    //for login
+    WebElement li1 = wd.findElement(By.cssSelector("[href='/login']"));
+    WebElement li2 = wd.findElement(By.cssSelector("#user"));
+    WebElement li3 = wd.findElement(By.cssSelector("#login"));
+    WebElement li4 = wd.findElement(By.cssSelector("#password"));
+    WebElement li5 = wd.findElement(By.cssSelector("#login-submit"));
+
+    WebElement li6 = wd.findElement(By.cssSelector("[data-test-id='header-member-menu-button']"));
+    WebElement li7 = wd.findElement(By.cssSelector(".m2N684FcksCyfT"));
+
+    //log out
+    WebElement li8 = wd.findElement(By.cssSelector("[data-test-id='header-member-menu-button']"));
+    WebElement li9 = wd.findElement(By.cssSelector("[data-test-id='header-member-menu-logout']"));
+    WebElement li10 = wd.findElement(By.cssSelector("#logout-submit"));
+
 }

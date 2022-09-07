@@ -20,10 +20,10 @@ public class Homework_0609 {
         WebElement item3 = wd.findElement(By.cssSelector("a[href='#item3']"));
         WebElement item4 = wd.findElement(By.cssSelector("a[href='#item4']"));
         //find element of form
-        WebElement name = wd.findElement(By.cssSelector("#form1"));
+        WebElement name = wd.findElement(By.cssSelector("[placeholder='Type your name']"));
+        WebElement surename = wd.findElement(By.cssSelector("[placeholder='Type your surename']"));
+        WebElement send = wd.findElement(By.cssSelector(".btn"));
 
-        WebElement surename = wd.findElement(By.cssSelector("#form1"));
-        WebElement send = wd.findElement(By.cssSelector("#form1"));
 
 
     }
