@@ -76,4 +76,11 @@ public class Start {
     WebElement li9 = wd.findElement(By.cssSelector("[data-test-id='header-member-menu-logout']"));
     WebElement li10 = wd.findElement(By.cssSelector("#logout-submit"));
 
+    List<WebElement> list4 = wd.findElements(By.tagName("td"));
+    WebElement element1 = list4.get(9); ///Poland
+    String text = element1.getText();
+        System.out.println(text);
+
+        wd.quit();
+
 }
